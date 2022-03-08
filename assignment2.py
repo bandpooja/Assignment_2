@@ -29,12 +29,12 @@ if __name__ == "__main__":
     # endregion
 
     # region validation
-    # previous_tokens = ["the", "jury"]
-    #
-    # for n in ns:
-    #     model = NGramModel(n=n, model_loc=model_loc, vocabulary=vocabulary)
-    #     model.load_model()
-    #     print(f"{n}-gram model prediction: {model.get_suggestions(previous_tokens)}")
+    previous_tokens = ["the", "jury"]
+    
+    for n in ns:
+        model = NGramModel(n=n, model_loc=model_loc, vocabulary=vocabulary)
+        model.load_model()
+        print(f"{n}-gram model prediction: {model.get_suggestions(previous_tokens)}")
     # endregion
 
     # region testing
