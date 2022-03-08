@@ -1,0 +1,5 @@
+nltk~=3.6.5
+joblib~=1.1.0
+pytrec-eval-terrier
+numpy
+pandas
