@@ -1,4 +1,4 @@
-# Assignmnet 2
+# Assignment 2
 
 For Assignment 2 I have used the *Brown Corpus* to build n-gram language model. For testing I used **Brikbeck** corpus.
 
