@@ -19,7 +19,7 @@ if __name__ == "__main__":
     tokenized_sent = preprocess_pipeline(new_list)
     final_train, vocabulary = cleansing(tokenized_sent, min_freq)
 
-    ns = [1, 2, 3, 5]  #, 10]
+    ns = [1, 2, 3, 5, 10]
     model_loc = 'models'
 
     for n in ns:
