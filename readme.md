@@ -10,7 +10,6 @@ To setup the environment which I used to create this project. Just run
 
 ```
 pip install -r requirements.txt
-
 ```
 
 ## Structure
