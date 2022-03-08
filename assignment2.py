@@ -64,9 +64,12 @@ if __name__ == "__main__":
                                                                    desc=f'Predictions-{n}-gram-model'):
             query[f"{' '.join(test_previous_tokens)} *"] = {fill_in_word: 1}
             result_eval[f"{' '.join(test_previous_tokens)} *"] = {}
-            print(test_previous_tokens)
-            print(fill_in_word)
-            print(suggestion)
+            
+            # to generate the example 
+            # print(test_previous_tokens)
+            # print(fill_in_word)
+            # print(suggestion)
+            
             for word in [w[0] for w in suggestion[1]]:
                 result_eval[f"{' '.join(test_previous_tokens)} *"][word] = 1
 
@@ -82,8 +85,9 @@ if __name__ == "__main__":
         print(f'Stats of {n}-gram model')
         print('#' * 20)
         evaluator = pytrec_eval.RelevanceEvaluator(query, {'success'})
-
-        print(json.dumps(evaluator.evaluate(result_eval), indent=1))
+        
+        # # to print result for each test-sample
+        # print(json.dumps(evaluator.evaluate(result_eval), indent=1))
         eval = evaluator.evaluate(result_eval)
 
         for measure in sorted(list(eval[list(eval.keys())[0]].keys())):
